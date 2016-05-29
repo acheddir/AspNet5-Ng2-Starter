@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - AspNet5-Ng2-Starter</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/css/site.css"/>
+    </environment>
+    <environment names="Staging,Production">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"
+			  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+			  asp-fallback-href="~/lib/font-awesome/css/font-awesome.min.css"/>
+    </environment>
+
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-controller="Home" asp-action="Index" class="navbar-brand">AspNet5-Ng2-Starter</a>
+            </div>
+            <div class="navbar-collapse collapse" id="main-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2016 - AspNet5-Ng2-Starter</p>
+        </footer>
+    </div>
+
+    <environment names="Development">
+        <!-- jQuery, Bootstrap -->
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- Polyfill(s) for older browsers -->
+        <script src="~/lib/es6-shim/es6-shim.js"></script>
+        <script src="~/lib/zone.js/dist/zone.js"></script>
+        <script src="~/lib/reflect-metadata/Reflect.js"></script>
+        <script src="~/lib/systemjs/dist/system.src.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js">
+        </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.1/es6-shim.min.js"
+                asp-fallback-src="~/lib/es6-shim/es6-shim.js">
+        </script>
+       <script src="~/lib/zone.js/dist/zone.min.js"></script>
+       <script src="~/lib/reflect-metadata/Reflect.js"></script>
+       <script src="~/lib/systemjs/dist/system.js"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section scripts {
+    <!-- Configure SystemJS -->
+    <script src="~/systemjs.config.js"></script>
+    <script>
+        System.import('app')
+            .catch(function (err) {
+                console.error(err);
+            });
+    </script>
+}
+
+<div>
+    <pm-app><i class="fa fa-spin fa-circle-o-notch"></i> Loading...</pm-app>
+</div>

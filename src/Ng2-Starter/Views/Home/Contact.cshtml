@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+@section scripts {
+    <!-- Configure SystemJS -->
+    <script src="~/systemjs.config.js"></script>
+    <script>
+        System.import('contactapp')
+            .catch(function (err) {
+                console.error(err);
+            });
+    </script>
+}
+
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<div>
+    <pm-contact><i class="fa fa-spin fa-circle-o-notch"></i> Loading...</pm-contact>
+</div>
