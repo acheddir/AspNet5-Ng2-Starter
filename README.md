@@ -5,7 +5,7 @@ Starter based on [DeborahK](https://github.com/DeborahK) repo: [Anguler2-Getting
 This starter can be edited with Visual Studio 2015 (Update 2) or Visual Studio Code.
 
 Versions used:
-* AspNet Core 1.0 (RC2)
+* AspNet Core 1.0 (RC2) -> ([download](https://www.microsoft.com/net/core) or [migrate from DNX to .Net Core CLI](http://dotnet.github.io/docs/core-concepts/dnx-migration.html))
 * Angular2 (RC1)
 * Node v6.2.0
 * Npm v3.9.3
@@ -20,7 +20,6 @@ Under the folder `src/Ng2-Starter` run the following :
 If using Visual Studio Code :
 
 1. dotnet restore
-2. dotnet build
 3. npm start (to watch for typescript files changes)
  
 On a different command line :
