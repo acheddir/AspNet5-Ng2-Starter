@@ -11,7 +11,7 @@ Versions used:
 * Npm v3.9.3
 
 
-Under the folder `src/Ng2-Starter` run the following :
+Under the `src/Ng2-Starter` folder, run the following :
 
 1. npm install && bower install
 2. gulp ng2 (this task will copy angular dependencies from node_modules to wwwroot/lib)
