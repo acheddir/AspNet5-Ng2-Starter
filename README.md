@@ -13,16 +13,16 @@ Versions used:
 
 Under the `src/Ng2-Starter` folder, run the following :
 
-1. npm install && bower install
-2. gulp ng2 (this task will copy angular dependencies from node_modules to wwwroot/lib)
+1. ``` npm install && bower install ```
+2. ``` gulp ng2 ``` (this task will copy angular dependencies from node_modules to wwwroot/lib)
 
 
 If using Visual Studio Code :
 
-1. dotnet restore
-3. npm start (to watch for typescript files changes)
+1. ``` dotnet restore ```
+3. ``` npm start ``` (to watch for typescript files changes)
  
 On a different command line :
 
-4. set ASPNETCORE_ENVIRONMENT=Development
-5. dotnet run (to run the app)
+4. ``` set ASPNETCORE_ENVIRONMENT=Development ```
+5. ``` dotnet run ``` (to run the app)
