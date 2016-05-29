@@ -24,5 +24,6 @@ If using Visual Studio Code :
 3. npm start (to watch for typescript files changes)
  
 On a different command line :
+
 4. set ASPNETCORE_ENVIRONMENT=Development
 5. dotnet run (to run the app)
