@@ -17,7 +17,7 @@ Under the `src/Ng2-Starter` folder, run the following :
 2. ``` gulp ng2 ``` (this task will copy angular dependencies from node_modules to wwwroot/lib)
 
 
-If using Visual Studio Code :
+If using Visual Studio Code, on a command line run :
 
 1. ``` dotnet restore ```
 3. ``` npm start ``` (to watch for typescript files changes)
