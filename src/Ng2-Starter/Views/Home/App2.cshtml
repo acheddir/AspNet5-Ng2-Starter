@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "App2";
+}
+
+@section scripts {
+    <!-- Configure SystemJS -->
+    <script src="~/systemjs.config.js"></script>
+    <script>
+        System.import('app2')
+            .catch(function (err) {
+                console.error(err);
+            });
+    </script>
+}
+
+<h3>@ViewData["Message"]</h3>
+
+<div>
+    <app><i class="fa fa-spin fa-circle-o-notch"></i> Loading...</app>
+</div>

@@ -11,31 +11,31 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var ContactComponent;
+    var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            let ContactComponent = class ContactComponent {
+            let AppComponent = class AppComponent {
                 constructor() {
-                    this.contactComponentDescription = 'Here goes a second ng2 component...';
+                    this.description = 'Here goes a second Angular2 app...';
                 }
             };
-            ContactComponent = __decorate([
+            AppComponent = __decorate([
                 core_1.Component({
-                    selector: 'pm-contact',
+                    selector: 'app',
                     template: `
     <div>
-        <h4>{{contactComponentDescription}}</h4>
+        <h4>{{description}}</h4>
     <div>
     `
                 }), 
                 __metadata('design:paramtypes', [])
-            ], ContactComponent);
-            exports_1("ContactComponent", ContactComponent);
+            ], AppComponent);
+            exports_1("AppComponent", AppComponent);
         }
     }
 });
-//# sourceMappingURL=contact.component.js.map
+//# sourceMappingURL=app.component.js.map

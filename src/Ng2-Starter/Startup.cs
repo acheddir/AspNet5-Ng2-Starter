@@ -44,7 +44,7 @@ namespace Ng2Starter
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/home/error");
             }
 
             app.UseStaticFiles();
@@ -53,10 +53,10 @@ namespace Ng2Starter
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=App1}/{id?}");
                 routes.MapRoute("spa-fallback",
                                 "{*anything}",
-                                new { controller = "Home", action = "Index" });
+                                new { controller = "Home", action = "App1" });
                 routes.MapWebApiRoute("defaultApi",
                                       "api/{controller}/{id?}");
             });

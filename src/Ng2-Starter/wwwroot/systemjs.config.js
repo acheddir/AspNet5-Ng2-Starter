@@ -7,7 +7,7 @@
     // map tells the System loader where to look for things
     var map = {
         'app': 'app',
-        'contactapp': 'contactapp',
+        'app2': 'app2',
         'rxjs': 'lib/rxjs',
         '@angular': 'lib/@angular'
     };
@@ -15,7 +15,7 @@
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
         'app': { main: 'main.js', defaultExtension: 'js' },
-        'contactapp': { main: 'main.js', defaultExtension: 'js' },
+        'app2': { main: 'main.js', defaultExtension: 'js' },
         'rxjs': { defaultExtension: 'js' }
     };
 

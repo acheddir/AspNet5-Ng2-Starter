@@ -8,8 +8,15 @@ namespace Ng2Starter.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult App1()
         {
+            return View();
+        }
+        
+        public IActionResult App2()
+        {
+            ViewData["Message"] = "Angular2 2nd Application.";
+            
             return View();
         }
 
