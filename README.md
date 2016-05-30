@@ -1,5 +1,5 @@
 # AspNet5-Ng2-Starter
-Starter based on [DeborahK](https://github.com/DeborahK) repo: [Anguler2-GettingStarted](https://github.com/DeborahK/Angular2-GettingStarted)
+Starter based on repo: [Anguler2-GettingStarted](https://github.com/DeborahK/Angular2-GettingStarted)
 
 
 This starter can be edited with Visual Studio 2015 (Update 2) or Visual Studio Code.
