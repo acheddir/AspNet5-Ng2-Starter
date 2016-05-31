@@ -20,7 +20,7 @@ Under the `src/Ng2-Starter` folder, run the following :
 If using Visual Studio Code, on a command line run :
 
 1. ``` dotnet restore ```
-3. ``` npm start ``` (to watch for typescript files changes)
+3. ``` npm run tsc:w ``` (to watch for typescript files changes)
  
 On a different command line :
 
